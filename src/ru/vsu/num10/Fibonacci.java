@@ -31,7 +31,7 @@ public class Fibonacci {
 
     public static int readN() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter n --> ");
+        System.out.print("Enter n = ");
         return scanner.nextInt();
     }
 }
