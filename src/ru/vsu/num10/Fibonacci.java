@@ -6,7 +6,7 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         // N-th number of a sequence in which each element is equal to the sum of the previous two.
-        int n = readN();
+        int n = readInteger();
         printSumOfEvenFibonacciNumbers(gettingTheSumOfTheNumber(n));
     }
 
@@ -33,9 +33,9 @@ public class Fibonacci {
         System.out.println("Displaying the sum of even Fibonacci numbers: "+evenSum+"");
     }
 
-    static int readN() {
+    static int readInteger() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter n = ");
+        System.out.print("Enter N-th number of a sequence = ");
         return scanner.nextInt();
     }
 }
