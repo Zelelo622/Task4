@@ -7,10 +7,10 @@ public class Fibonacci {
     public static void main(String[] args) {
         // N-th number of a sequence in which each element is equal to the sum of the previous two.
         int n = readInteger();
-        printSumOfEvenFibonacciNumbers(gettingTheSumOfTheNumber(n));
+        printSumOfEvenFibonacciNumbers(calculateTheSumOfTheNumber(n));
     }
 
-    static int gettingTheSumOfTheNumber(int n) {
+    static int calculateTheSumOfTheNumber(int n) {
         // The first term of the Fibonacci sequence
         int fib1 = 1;
         // Second term of the Fibonacci sequence
