@@ -7,10 +7,10 @@ public class Fibonacci {
     public static void main(String[] args) {
         // N-th number of a sequence in which each element is equal to the sum of the previous two.
         int n = readInteger();
-        printSumOfEvenFibonacciNumbers(calculateSumOfNumber(n));
+        printSumOfEvenFibonacciNumbers(calculateSumOfEvenNumber(n));
     }
 
-    static int calculateSumOfNumber(int n) {
+    private static int calculateSumOfEvenNumber(int n) {
         // The first term of the Fibonacci sequence
         int fib1 = 1;
         // Second term of the Fibonacci sequence
@@ -29,11 +29,11 @@ public class Fibonacci {
         return evenSum;
     }
 
-    static void printSumOfEvenFibonacciNumbers(int evenSum) {
-        System.out.println("Displaying the sum of even Fibonacci numbers: "+evenSum+"");
+    private static void printSumOfEvenFibonacciNumbers(int evenSum) {
+        System.out.println("Displaying the sum of even Fibonacci numbers: " + evenSum + "");
     }
 
-    static int readInteger() {
+    private static int readInteger() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter N-th number of a sequence = ");
         return scanner.nextInt();
